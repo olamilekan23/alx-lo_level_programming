@@ -9,28 +9,23 @@
  */
 int main(void)
 {
-	char password[7];
-	int i;
+	char password[12];
+	int i, sum;
 
 	srand(time(NULL));
 
-	for (i = 0; i < 6; i++)
+	for (i = 0; i < 11; i++)
 	{
-		switch(rand() % 3)
-		{
-			case 0:
-				password[i] = rand() % 26 + 'A';
-				break;
-			case 1:
-				password[i] = rand() % 26 + 'a';
-				break;
-			default:
-				password[i] = rand() % 10 + '0';
-				break;
-		}
+		password[i] = rand() % 26 + 'A';
+	}
+	sum = 0;
+	for (i = 0; i < 10; i++)
+	{
+		sum += password[i];
 	}
 
-	password[6] = '\0';
+	password[10] = (sum % 10) + '0';
+	password[11] = '\0';
 	printf("%s", password);
 
 	return (0);
