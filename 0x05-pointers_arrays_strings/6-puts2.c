@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts - prints extras of a spring
+ * puts2 - prints extras of a spring
  * @str: the used string references
  * Return: 0
  */
