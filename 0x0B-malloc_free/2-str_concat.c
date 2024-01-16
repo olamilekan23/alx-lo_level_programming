@@ -1,4 +1,4 @@
-#inckude "main.h"
+#include "main.h"
 
 /**
  * str_concat - concatenates two string
