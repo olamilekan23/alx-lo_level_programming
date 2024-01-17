@@ -9,7 +9,7 @@
  */
 char **strtow(char *str)
 {
-	int i, j k;
+	int i, j, k;
 	int word_count = 0;
 	char **words;
 
